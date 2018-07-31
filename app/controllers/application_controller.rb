@@ -8,6 +8,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    return erb :index
+    return erb :icecream
   end
+
+   post '/newflavor' do
+  "Your new flavor is #{params[:flavor_1]} and #{params[:flavor_2]} swirl!"
+end
+
 end
