@@ -13,6 +13,10 @@ class ApplicationController < Sinatra::Base
 
    post '/newflavor' do
   "Your new flavor is #{params[:flavor_1]} and #{params[:flavor_2]} swirl!"
-end
+  end
+
+  post '/sample' do
+    return erb :sample
+  end
 
 end
