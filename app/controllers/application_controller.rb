@@ -11,12 +11,13 @@ class ApplicationController < Sinatra::Base
     return erb :icecream
   end
 
-   post '/newflavor' do
-  "Your new flavor is #{params[:flavor_1]} and #{params[:flavor_2]} swirl!"
-  end
+  #  post '/newflavor' do
+  # "Your new flavor is #{params[:flavor_1]} and #{params[:flavor_2]} swirl!"
+  # end
 
-  post '/sample' do
-    return erb :sample
+
+  post '/swirl' do
+    return erb :swirl
   end
 
 end
